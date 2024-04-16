@@ -4,7 +4,7 @@ $sec-color: #FF0000;
 
 body {
     color: $first-color;
-    .red:nth-child(1) {
+    > .red {
         color: $sec-color;
     }
 }
