@@ -1,0 +1,10 @@
+/* use of nth-childs */
+$first-color: #3D3D3D;
+$sec-color: #FF0000;
+
+body {
+    color: $first-color;
+    .red:nth-child(1) {
+        color: $sec-color;
+    }
+}
