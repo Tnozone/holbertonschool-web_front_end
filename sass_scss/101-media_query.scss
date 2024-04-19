@@ -1,7 +1,7 @@
 /* sass file that assigns specific fonts. */
 $small: 320px;
 
-.h1 {
+h1 {
     font-size: 20px;
     @media screen and (max-width: $small) {
         font-size: 14px;
