@@ -1,0 +1,14 @@
+/* sort list and print in debug output */
+$list_to_sort: ("john" "anna" "zoe" "kim" "felicia" "carrie");
+
+@function sortList($list) {
+    $sortedList: ();
+    @each $item in sort($list) {
+      $sortedList: append($sortedList, $item);
+    }
+    @return $sortedList;
+  }
+
+$sortedList: sortList($list_to_sort);
+
+@debug "Sorted List: #{$sortedList}";
