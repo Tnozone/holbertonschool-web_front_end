@@ -1,0 +1,20 @@
+/* sass file that assigns specific fonts. */
+$small: 320px;
+$medium: 640px;
+$large: 960px;
+
+h1 {
+    font-size: 20px;
+    @media screen and (max-width: $large) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: $medium) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: $small) {
+        font-size: 14px;
+        .small {
+            color: #1D1D1D;
+        }
+    }
+}
