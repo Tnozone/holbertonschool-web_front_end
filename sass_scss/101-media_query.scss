@@ -1,0 +1,12 @@
+/* sass file that assigns specific fonts. */
+$breakpoints: ()
+
+@media (min-width: 320px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+h1 {
+        font-size: 14px;
+}
