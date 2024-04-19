@@ -1,12 +1,24 @@
 /* sass file that assigns specific fonts. */
-$breakpoints: ()
+$breakpoints: (
+    "no-screen": 0,
+    "small-screen": 320px,
+);
 
-@media (min-width: 320px) {
-    h1 {
-        font-size: 20px;
+@mixin no-screen {
+    @media (min-width: map-get($breakpoints, "no-screen")) {
+        @content;
+    }
+}
+
+@mixin small-screen {
+    @media (min-width: map-get($breakpoints, "small-screen")) {
+        @content;
     }
 }
 
 h1 {
+    font-size: 20px;
+    @include no-screen {
         font-size: 14px;
+    }
 }
