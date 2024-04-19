@@ -4,46 +4,47 @@
     justify-content: center;
     color: white;
     align-items: baseline;
+    height: 250px;
+    width: 1000px;
 }
 
 .box {
     display: flex;
-    font-size: 20px;
     align-items: center;
     justify-content: center;
 }
 
 .box1 {
     background-color: lightgreen;
-    width: 100px;
-    height: 75px;
     font-size: 20px;
+    height: 25%;
+    flex: 1;
 }
 
 .box2 {
     background-color: lightskyblue;
-    width: 200px;
-    height: 125px;
     font-size: 50px;
+    height: 50%;
+    flex: 2;
 }
 
 .box3 {
     background-color: darkblue;
-    width: 400px;
-    height: 250px;
     font-size: 150px;
+    height: 100%;
+    flex: 4;
 }
 
 .box4 {
     background-color: purple;
-    width: 200px;
-    height: 125px;
     font-size: 50px;
+    height: 50%;
+    flex: 2;
 }
 
 .box5 {
     background-color: orange;
-    width: 100px;
-    height: 75px;
     font-size: 20px;
+    height: 25%;
+    flex: 1;
 }
