@@ -49,4 +49,4 @@ $sort-order: ('a' 'b' 'c' 'd' 'e' 'f' 'g' 'h' 'i' 'j' 'k' 'l' 'm' 'n' 'o' 'p'
 
 $sortedList: sort($list_to_sort, $sort-order);
 
-@debug "Sorted List: #{$sortedList}";
+@debug "#{$sortedList}";
