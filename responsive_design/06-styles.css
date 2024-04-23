@@ -301,7 +301,7 @@
       flex-direction: column;
       overflow: hidden;
       max-height: 0;
-      transition: 0 .2s ease-out;
+      transition: max-height .2s ease-out;
     }
   }
   
@@ -334,7 +334,7 @@
     display: block;
     width: 2rem;
     position: relative;
-    transition: var(--color-white) .2s ease-out;
+    transition: background .2s ease-out;
   }
 
   .header .menu-icon .navicon::before, .header .menu-icon .navicon::after {
