@@ -24,4 +24,4 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - HTML and CSS have been rendered on Chrome 78 or more.
 
 # Wireframe of the Techium project - mobile version
-![Techium wireframe mobile format](./images/techium wireframe.png)
+![Techium wireframe mobile format](/images/techium wireframe.png)
