@@ -345,6 +345,7 @@
     background: var(--color-white);
     display: block;
     width: 2rem;
+    height: .2rem;
     position: relative;
     transition: background .2s ease-out;
   }
