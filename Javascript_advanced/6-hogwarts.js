@@ -3,7 +3,7 @@ function studentHogwarts() {
     let name = null;
 
     function changeScoreBy(points) {
-        privateScore += point;
+        privateScore += points;
     }
 
     return { 
