@@ -5,5 +5,5 @@ function welcome(firstName, lastName) {
         alert("Welcome" + fullname +"!");
     }
 
-    displayFullName();
+    return displayFullName();
 }
