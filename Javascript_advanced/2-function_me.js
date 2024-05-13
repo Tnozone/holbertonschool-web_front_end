@@ -2,6 +2,6 @@ function welcomeMessage(fullName) {
     return () => alert("Welcome " + fullName);
 }
 
-let guillaume = welcomeMessage(Guillaume);
-let alex = welcomeMessage(Alex);
-let fred = welcomeMessage(Fred);
+const guillaume = welcomeMessage(Guillaume);
+const alex = welcomeMessage(Alex);
+const fred = welcomeMessage(Fred);
