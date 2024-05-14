@@ -17,10 +17,12 @@ function countPrimeNumbers() {
 }
 
 function hundredCount() {
-    const t0 = performance.now();
     for (let n = 1; n <= 100; n++) {
         countPrimeNumbers();
     }
-    const t1 = performance.now();
-    console.log(`Execution time of calculating prime numbers 100 times was ${t1 - t0} milliseconds.`);
 }
+
+const t0 = performance.now();
+setTimeout(hundredCount(), 0);
+const t1 = performance.now();
+console.log(`Execution time of calculating prime numbers 100 times was ${t1 - t0} milliseconds.`);
