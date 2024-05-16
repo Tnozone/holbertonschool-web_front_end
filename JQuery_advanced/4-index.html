@@ -38,9 +38,19 @@
                         )
 
                     );
-                };
+                }
+
+                function replaceFamilyTree() {
+                    $("table > tbody").html(
+                        $("<tr></tr>").append(
+                            $("<td></td>").text("Gerard"),
+                            $("<td></td>").text("Bonissa")
+                        )
+                    );
+                }
 
                 createFamilyTree();
+                replaceFamilyTree();
             }); 
 
         </script>
