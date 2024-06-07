@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Cookie</title>
 </head>
 <body>
     <div>
@@ -17,6 +17,7 @@
         <div>
             <h1>Cookies</h1>
             <button onclick="showCookies()">Show the cookies</button>
+            <p id="cookieDisplay"></p>  <!-- Added a specific paragraph for displaying cookie info -->
         </div>
     </div>
     <script>
@@ -40,11 +41,10 @@
         }
 
         function showCookies() {
-            const cookies = document.cookie.split(';').map(cookie => cookie.trim());
-            const cookiesText = cookies.join('; ');
-            const p = document.createElement('p');
-            p.innerText = `Cookies: ${cookiesText}`;
-            document.body.appendChild(p);
+            const email = getCookie('email');
+            const firstname = getCookie('firstname');
+            const displayText = `Email: ${email} - Firstname: ${firstname}`;
+            document.getElementById('cookieDisplay').innerText = displayText;
         }
     </script>
 </body>

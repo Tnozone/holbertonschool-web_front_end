@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Cookie</title>
 </head>
 <body onload="showWelcomeMessageOrForm()">
     <div id="loginForm">
@@ -18,13 +18,14 @@
         <button onclick="showCookies()">Show the cookies</button>
         <p id="cookieDisplay"></p>
     </div>
+
     <script>
         function setCookies() {
             const firstname = document.getElementById('firstname').value;
             const email = document.getElementById('email').value;
 
             const now = new Date();
-            now.setTime(now.getTime() + (10 * 24 * 60 * 60 * 1000));  // Set expiration to 10 days
+            now.setTime(now.getTime() + (10 * 24 * 60 * 60 * 1000));
             const expires = "expires=" + now.toUTCString();
 
             document.cookie = `firstname=${firstname}; ${expires}; path=/`;
